@@ -1,0 +1,11 @@
+//9
+@ echo off
+echo Antivirus deteching folks
+:start cd C:\
+IF EXIST swing.bat goto infected IF NOT EXIST virus.bat goto clean
+:infected
+echo WARNING swing.batVIRUS DETECTED!! del swing.bat
+pause goto start
+:clean
+echo your system is secure now and virus has been detected! pause
+exit
